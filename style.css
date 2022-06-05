@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.sep{
+    animation: right_key 1s;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    transition: all 1s ;
+    z-index: 1;
+}
+.left{
+    animation: left_key 1s;
+    left: 50%;
+    transition: all 1s;
+}
+@keyframes left_key{
+    0%{
+        left: 0%;
+    }
+}
+@keyframes right_key{
+    0%{
+        left: 50%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+.content{
+    z-index: 0;
+    margin: auto;
+    margin-top: 22.5%;
+}

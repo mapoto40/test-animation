@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accueil</title>
+</head>
+<body>
+    <div class="sep left"></div>
+    <div class="content">
+        <button onclick="func()">test 1</button>
+    </div>
+    <div class="content">
+        <button onclick="func()">test 2</button>
+    </div>
+
+    <script>
+        const sep = document.querySelector('.sep');
+  
+        function func () {
+            if (sep.classList.contains('left')) {
+            sep.classList.remove('left')
+            } else {
+            sep.classList.add('left')
+            }
+        }
+    </script>
+    
+</body>
+</html>
